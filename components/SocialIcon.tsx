@@ -6,11 +6,13 @@ type SocialIconProps = {
 
 export default function SocialIcon({ type }: SocialIconProps) {
   return (
-    <Image
-      src={`icon-${type}.svg`}
-      alt={`${type} icon`}
-      width={24}
-      height={24}
-    />
+    <div className="relative h-6 w-6 lg:h-8 lg:w-8">
+      <Image
+        className="object-contain"
+        src={`icon-${type}.svg`}
+        alt={`${type} icon`}
+        fill
+      />
+    </div>
   );
 }
