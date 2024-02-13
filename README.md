@@ -18,10 +18,12 @@ Users should be able to:
 
 ## Screenshot
 
+![Screen Shot 2024-02-13 at 18 01 55](https://github.com/palmeiroerick/huddle-landing-page-with-curved-sections/assets/148393698/d5a4a9bc-fc07-4f03-8a31-5bdcb80e08bf)
+
 ## Links
 
-- [Solution]()
-- [Live Site]()
+- [Solution](https://github.com/palmeiroerick/huddle-landing-page-with-curved-sections/)
+- [Live Site](https://huddle-landing-page-with-curved-sections-ten-mu.vercel.app/)
 
 ## Built with
 
