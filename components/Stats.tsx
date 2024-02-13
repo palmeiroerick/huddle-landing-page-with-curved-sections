@@ -11,7 +11,7 @@ type WrapperProps = {
 };
 
 function Wrapper({ children }: WrapperProps) {
-  return <div className="flex w-40 flex-col gap-3">{children}</div>;
+  return <div className="flex w-40 flex-col gap-3 lg:w-auto">{children}</div>;
 }
 
 export default function Stats({ type }: StatsProps) {
@@ -24,10 +24,10 @@ export default function Stats({ type }: StatsProps) {
           width={32}
           height={28}
         />
-        <Title as="h2" className="text-6xl">
+        <Title as="h2" className="text-6xl lg:text-7xl lg:font-semibold">
           1.4k+
         </Title>
-        <Text>Communities Formed</Text>
+        <Text className="lg:text-[22px] lg:text-[#777]">Communities Formed</Text>
       </Wrapper>
     );
   } else {
@@ -39,10 +39,10 @@ export default function Stats({ type }: StatsProps) {
           width={28}
           height={24}
         />
-        <Title as="h2" className="text-5xl">
+        <Title as="h2" className="text-5xl lg:text-7xl lg:font-semibold">
           2.7m+
         </Title>
-        <Text>Messages Sent</Text>
+        <Text className="lg:text-[22px] lg:text-[#777]">Messages Sent</Text>
       </Wrapper>
     );
   }
