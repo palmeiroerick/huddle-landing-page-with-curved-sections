@@ -19,18 +19,6 @@ const config: Config = {
       poppins: "var(--poppins)",
       openSans: "var(--open-sans)",
     },
-    backgroundImage: {
-      footerTopDesktop: "url('/bg-footer-top-desktop.svg')",
-      footerTopMobile: "url('/bg-footer-top-mobile.svg')",
-      sectionBottomDesktop1: "url('/bg-section-bottom-desktop-1.svg')",
-      sectionBottomDesktop2: "url('/bg-section-bottom-desktop-2.svg')",
-      sectionBottomMobile1: "url('/bg-section-bottom-mobile-1.svg')",
-      sectionBottomMobile2: "url('/bg-section-bottom-mobile-2.svg')",
-      sectionTopDesktop1: "url('/bg-section-top-desktop-1.svg')",
-      sectionTopDesktop2: "url('/bg-section-top-desktop-2.svg')",
-      sectionTopMobile1: "url('/bg-section-top-mobile-1.svg')",
-      sectionTopMobile2: "url('/bg-section-top-mobile-2.svg')",
-    },
   },
 };
 

@@ -1,24 +1,29 @@
+import Image from "next/image";
+
 type CurveProps = {
-  type:
-    | "footerTop"
-    | "sectionBottom1"
-    | "sectionBottom2"
-    | "sectionTop1"
-    | "sectionTop2";
+  imageSrc:
+    | "/bg-footer-top-mobile.svg"
+    | "/bg-footer-top-desktop.svg"
+    | "/bg-section-bottom-mobile-1.svg"
+    | "/bg-section-bottom-desktop-1.svg"
+    | "/bg-section-bottom-mobile-2.svg"
+    | "/bg-section-bottom-desktop-2.svg"
+    | "/bg-section-top-mobile-1.svg"
+    | "/bg-section-top-desktop-1.svg"
+    | "/bg-section-top-mobile-2.svg"
+    | "/bg-section-top-desktop-2.svg";
+  className?: string;
 };
 
-export default function Curve({ type }: CurveProps) {
-  const style = {
-    footerTop: "bg-footerTopMobile w-[375px] h-[53px] lg:bg-footerTopDesktop",
-    sectionBottom1:
-      "bg-sectionBottomMobile1 w-[375px] h-[52px] lg:bg-sectionBottomDesktop1",
-    sectionBottom2:
-      "bg-sectionBottomMobile2 w-[375px] h-[101px] lg:bg-sectionBottomDesktop2",
-    sectionTop1:
-      "bg-sectionTopMobile1 w-[375px] h-[112px] lg:bg-sectionTopDesktop1",
-    sectionTop2:
-      "bg-sectionTopMobile2 w-[375px] h-[103px] lg:bg-sectionTopDesktop2",
-  };
-
-  return <div className={`${style[type]}  bg-white`} />;
+export default function Curve({ imageSrc, className }: CurveProps) {
+  return (
+    <Image
+      className={`${className} h-auto w-full`}
+      src={imageSrc}
+      alt=""
+      width="0"
+      height="0"
+      sizes="100vw"
+    />
+  );
 }
